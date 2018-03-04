@@ -5,8 +5,9 @@ class Muppet
 
 	def initialize name
 		@name = name
-		@color = []
-		@color.sample
+		color_array = ["yellow", "blue", "green", ]
+		@color = color_array.sample
+		p "This muppet is called #{name} and is a #{@color} colored muppet"
 	end
 
 end
@@ -23,4 +24,14 @@ end
 
 class Bird
 
-	def initialize adjective, name, 
+	def initialize adjective, name
+		bird_species_array = ['Belted Kingfisher', 'Yellow-Billed Cuckoo', 'White-Cheeked Pintail', 'Cinnamon Teal', 'Lesser Scaup', 'Bufflehead', 'Common Goldeneye', 'Fulvous Whistling Duck', 'Hooded Merganser', 'White-Winged Scoter', 'Chimney Swift', 'Rufous Hummingbird', 'Chuck-Wills-Widow', 'Whip-Poor-Will', 'Albatross', 'Ruddy Turnstone', 'Piping Plover', 'Killdeer', 'Laughing Gull', 'Marbled Godwit', 'Least Tern', 'New World Warbler'];
+		@bird_species = bird_species_array.sample;
+		p "#{name} is a #{@bird_species}"
+
+	end
+end
+
+
+
+
